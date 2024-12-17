@@ -101,7 +101,7 @@ def disease_prediction_gui():
     # Load data and train models
     X_train, X_test, y_train, y_test = load_and_preprocess_data(r"D:\\Study\\code\\Python\\ProjectDSP\\heart.csv")
     models = train_models(X_train, y_train)
-    best_model = models["Random Forest"]  # Assuming Random Forest is the best model
+    best_model = models["Logistic Regression"]  # Assuming Random Forest is the best model
 
     while True:
         event, values = window.read()
